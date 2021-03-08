@@ -1,0 +1,72 @@
+.navbar-dropdown {
+  left: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.45s ease;
+  z-index: 1030;
+  background: #282828
+}
+
+.navbar-dropdown .navbar-logo {
+  margin-right: 0.8rem;
+  transition: margin 0.3s ease-in-out;
+  vertical-align: middle
+}
+
+.navbar-dropdown .navbar-logo img {
+  height: 3.125rem;
+  transition: all 0.3s ease-in-out
+}
+
+.navbar-dropdown.navbar-fixed-top {
+  position: fixed
+}
+
+.navbar-dropdown .navbar-icon span {
+  vertical-align: -4px
+}
+
+.nav-dropdown {
+  font-size: 0.75rem;
+  font-weight: 500;
+  height: auto !important
+}
+
+.nav-dropdown .link {
+  margin: .667em 1.667em;
+  font-weight: 500;
+  padding: 0;
+  transition: color .2s ease-in-out
+}
+
+.nav-dropdown .link.dropdown-toggle::after {
+  margin-left: .25rem;
+  border-top: 0 solid;
+  border-right: 0 solid transparent;
+  border-left: 0 solid transparent;
+  border-bottom: 0
+}
+
+.nav-dropdown .link.dropdown-toggle[aria-expanded="true"] {
+  margin: 0;
+  padding: 0.667em 3.263em 0.667em 1.667em
+}
+
+.nav-dropdown .link::after,
+.nav-dropdown .dropdown-item::after {
+  color: inherit
+}
+
+.nav-dropdown .dropdown-item::after {
+  margin-top: -0.3077em;
+  position: absolute;
+  right: 1.1538em;
+  top: 50%
+}
+
+.nav-dropdown .dropdown-item:focus,
+.nav-dropdown .dropdown-item:hover {
+  background: none
+}

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'IconFonts';
+  src: url('assets/fonts/IconFonts.woff') format('woff'),
+    url('assets/fonts/IconFonts.svg#IconFonts') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+[class*=icon-]:before {
+  display: inline-block;
+  font-family: IconFonts;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.icon-email:before {
+  content: '\0041'
+}
+
+.icon-telegram:before {
+  content: '\0042'
+}
+
+.icon-github:before {
+  content: '\0043'
+}
+
+.icon-instagram:before {
+  content: '\0044'
+}
+
+.icon-close:before {
+  content: '\0045'
+}
+
+.icon-arrow-left:before {
+  position: relative;
+  float: right;
+  content: '\0046'
+}
+
+.icon-arrow-right:before {
+  position: relative;
+  float: right;
+  content: '\0047'
+}
+
+.icon-fullscreen:before {
+  position: relative;
+  float: right;
+  content: '\0048'
+}
