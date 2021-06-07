@@ -782,14 +782,17 @@ a[class*=text-]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-capti
   color: #8cb4ef
 }
 
-.footer {
-  background-color: #303134 !important;
-  padding-top: 30px;
+body{ 
+  display:flex; 
+  flex-direction:column; 
+}
+
+.footer{
+  margin-top: auto; 
   padding-bottom: 30px;
   padding-top: 30px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px
+  background-color: #303134;
+  overflow: hidden;
 }
 
 @media (max-width:991px) {
