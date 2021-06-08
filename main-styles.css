@@ -1216,7 +1216,7 @@ body{
 }
 
 .contact-page P {
-  color: #8cb4ef
+  color: #ffffffb3
 }
 
 .contact-page .section-subtitle {
@@ -1241,4 +1241,13 @@ body{
 }
 .social-row .socials:hover .iconfont {
   color: #fff
+}
+
+.link-spanner{
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
 }
