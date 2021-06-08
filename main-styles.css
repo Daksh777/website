@@ -1198,27 +1198,17 @@ body{
 }
 
 .contact-page .card-wrapper {
+  padding: 2rem;
   margin-bottom: 2rem;
   display: flex;
   border-radius: 10px;
   background: #353535d9
 }
 
-@media (max-width:991px) {
-  .contact-page .card-wrapper {
-    padding: 1rem 2rem
-  }
-}
-
-@media (min-width:992px) {
-  .contact-page .card-wrapper {
-    padding: 2rem 4rem
-  }
-}
-
 .contact-page .iconfont {
   font-size: 3rem;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
   color: #8cb4ef
 }
 
