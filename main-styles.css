@@ -757,19 +757,6 @@ a[class*=text-]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-capti
   justify-content: center
 }
 
-@media screen and (-ms-high-contrast:active),
-(-ms-high-contrast:none) {
-  .navigation-bar .navbar {
-    height: 70px
-  }
-
-  .navigation-bar .nav-item .nav-link:hover::before {
-    width: 175%;
-    max-width: calc(100% + 2rem);
-    left: -1rem
-  }
-}
-
 .index-page {
   background-color: #202124
 }
@@ -793,44 +780,6 @@ body{
   padding-top: 30px;
   background-color: #303134;
   overflow: hidden;
-}
-
-@media (max-width:991px) {
-  .navigation-bar .navbar .nav-item .nav-link::before {
-    display: none
-  }
-
-  .navigation-bar .navbar .navbar-logo img {
-    height: 3rem !important
-  }
-
-  .navigation-bar .navbar ul.navbar-nav li {
-    margin: auto
-  }
-
-  .navigation-bar .navbar .navbar-icon {
-    flex-shrink: initial;
-    flex-basis: auto;
-    word-break: break-word;
-    padding-right: 2rem
-  }
-
-  .navigation-bar .navbar .navbar-toggler {
-    flex-basis: auto
-  }
-}
-
-@media screen and (-ms-high-contrast:active),
-(-ms-high-contrast:none) {
-  .navigation-bar .navbar {
-    height: 70px
-  }
-
-  .navigation-bar .nav-item .nav-link:hover::before {
-    width: 175%;
-    max-width: calc(100% + 2rem);
-    left: -1rem
-  }
 }
 
 .projects-page {
@@ -920,44 +869,6 @@ body{
 
 .projects-page .section-subtitle {
   color: #fff
-}
-
-@media (max-width:991px) {
-  .navigation-bar .navbar .nav-item .nav-link::before {
-    display: none
-  }
-
-  .navigation-bar .navbar .navbar-logo img {
-    height: 3rem !important
-  }
-
-  .navigation-bar .navbar ul.navbar-nav li {
-    margin: auto
-  }
-
-  .navigation-bar .navbar .navbar-icon {
-    flex-shrink: initial;
-    flex-basis: auto;
-    word-break: break-word;
-    padding-right: 2rem
-  }
-
-  .navigation-bar .navbar .navbar-toggler {
-    flex-basis: auto
-  }
-}
-
-@media screen and (-ms-high-contrast:active),
-(-ms-high-contrast:none) {
-  .navigation-bar .navbar {
-    height: 70px
-  }
-
-  .navigation-bar .nav-item .nav-link:hover::before {
-    width: 175%;
-    max-width: calc(100% + 2rem);
-    left: -1rem
-  }
 }
 
 .gallery-page {
