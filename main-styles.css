@@ -1247,3 +1247,23 @@ body{
 .contact-page .section-subtitle {
   color: #fff
 }
+
+.social-row .socials {
+  display: inline-block;
+  text-align: center;
+  margin-right: .6rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: all .3s
+}
+.social-row .socials .iconfont {
+  transition: all .3s;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #8cb4ef;
+  font-size: 2rem
+}
+.social-row .socials:hover .iconfont {
+  color: #fff
+}
