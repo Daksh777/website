@@ -1259,3 +1259,8 @@ body{
 .contact-page .card-wrapper:hover {
   background-color: #424242;
 }
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
