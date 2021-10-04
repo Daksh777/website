@@ -1,26 +1,12 @@
-/* latin */
 @font-face {
   font-family: 'Google Sans';
   font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/googlesans/v36/4UabrENHsxJlGDuGo1OIlLU94YtzCwY.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/googlesans/v14/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2) format('woff2');
 }
-/* latin */
 @font-face {
-  font-family: 'Google Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/googlesans/v36/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin */
-@font-face {
-  font-family: 'Google Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/googlesans/v36/4UabrENHsxJlGDuGo1OIlLV154tzCwY.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-family: 'Google Sans Bold';
+  font-style: bold;
+  src: url(https://fonts.gstatic.com/s/googlesans/v14/4UabrENHsxJlGDuGo1OIlLU94YtzCwY.woff2) format('woff2');
 }
 
 section {
@@ -456,7 +442,7 @@ ul {
 }
 
 .display-1 {
-  font: 3rem 'Google Sans', sans-serif
+  font: 3rem 'Google Sans Bold', sans-serif;
 }
 
 .display-2 {
@@ -464,7 +450,7 @@ ul {
 }
 
 .display-4 {
-  font: 1.1rem/1.5 'Google Sans', sans-serif
+  font: 1.1rem/1.5 'Google Sans Bold', sans-serif
 }
 
 .display-5 {
@@ -766,7 +752,7 @@ a[class*=text-]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-capti
 }
 
 .index-page .display-2 {
-  font: 2.3rem 'Google Sans', sans-serif
+  font: 2.3rem 'Google Sans Bold', sans-serif
 }
 
 @media (max-width:768px) {
