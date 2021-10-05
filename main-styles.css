@@ -959,6 +959,18 @@ body{
   display: flex
 }
 
+[data-src]::before {
+  content: '';
+  display: block;
+  aspect-ratio: 4/3;
+}
+
+.loading {
+  background: rgb(48, 49, 52) url(https://raw.githubusercontent.com/SamHerbert/SVG-Loaders/master/svg-loaders/puff.svg) no-repeat;
+  background-position: center;
+  background-size: 100px;
+}
+
 .gallery-page .carousel-control-prev {
   margin-left: 2.5rem
 }
