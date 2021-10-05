@@ -965,10 +965,39 @@ body{
   aspect-ratio: 4/3;
 }
 
-.loading {
-  background: rgb(48, 49, 52) url(https://raw.githubusercontent.com/SamHerbert/SVG-Loaders/master/svg-loaders/puff.svg) no-repeat;
-  background-position: center;
-  background-size: 100px;
+@-webkit-keyframes phAnimation {
+  0% {
+    transform: translate3d(-30%, 0, 0);
+  }
+  100% {
+    transform: translate3d(30%, 0, 0);
+  }
+}
+
+@keyframes phAnimation {
+  0% {
+    transform: translate3d(-30%, 0, 0);
+  }
+  100% {
+    transform: translate3d(30%, 0, 0);
+  }
+}
+
+.loading::before {
+  background-color: #303436 !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  width: 500%;
+  margin-left: -250%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0) 54%) 50% 50%;
+  -webkit-animation: phAnimation 0.9s linear infinite;
+          animation: phAnimation 0.9s linear infinite;
+  content: " ";
+  pointer-events: none;
 }
 
 .gallery-page .carousel-control-prev {
