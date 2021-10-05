@@ -959,6 +959,40 @@ body{
   display: flex
 }
 
+[data-src]::before {
+  content: '';
+  display: block;
+  aspect-ratio: 4/3;
+}
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0
+  }
+  100% {
+    background-position: 468px 0
+  }
+}
+
+@-webkit-keyframes prideShimmer {
+  from {
+    background-position: top left
+  }
+  to {
+    background-position: top right
+  }
+}
+
+.loading {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+  background: #50535a;
+  background-image: linear-gradient(to right, #50535a 0%, #656871 20%, #50535a 40%, #50535a 100%);
+  background-repeat: no-repeat;
+}
+
 .gallery-page .carousel-control-prev {
   margin-left: 2.5rem
 }
