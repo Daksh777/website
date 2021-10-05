@@ -964,40 +964,33 @@ body{
   display: block;
   aspect-ratio: 4/3;
 }
-
-@-webkit-keyframes phAnimation {
+@-webkit-keyframes placeHolderShimmer {
   0% {
-    transform: translate3d(-30%, 0, 0);
+    background-position: -468px 0
   }
   100% {
-    transform: translate3d(30%, 0, 0);
+    background-position: 468px 0
   }
 }
 
-@keyframes phAnimation {
-  0% {
-    transform: translate3d(-30%, 0, 0);
+@-webkit-keyframes prideShimmer {
+  from {
+    background-position: top left
   }
-  100% {
-    transform: translate3d(30%, 0, 0);
+  to {
+    background-position: top right
   }
 }
 
-.loading::before {
-  background-color: #303436 !important;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 50%;
-  z-index: 1;
-  width: 500%;
-  margin-left: -250%;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 46%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0) 54%) 50% 50%;
-  -webkit-animation: phAnimation 0.9s linear infinite;
-          animation: phAnimation 0.9s linear infinite;
-  content: " ";
-  pointer-events: none;
+.loading {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+  background: #50535a;
+  background-image: linear-gradient(to right, #50535a 0%, #656871 20%, #50535a 40%, #50535a 100%);
+  background-repeat: no-repeat;
 }
 
 .gallery-page .carousel-control-prev {
