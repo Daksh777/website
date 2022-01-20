@@ -1301,3 +1301,124 @@ body{
   float: none;
   margin: 0 auto;
 }
+@media screen and (min-width: 768px) {
+.section {
+    padding: 6rem 0 2rem;
+}
+}
+
+.section {
+    padding: 2rem 0 4rem;
+}
+.section_title, .section_subtitle {
+  text-align: center;
+}
+
+.section_title {
+  font-size: 2.25rem;
+}
+@media screen and (min-width: 768px) {
+.section_subtitle {
+    margin-bottom: 4rem;
+}
+}
+
+.section_title, .section_subtitle {
+    text-align: center;
+}
+.section_subtitle {
+    display: block;
+    font-size: 0.875rem;
+    margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+.skills_container, .about_container {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media screen and (min-width: 768px) {
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+.skills_container {
+    row-gap: 0;
+}
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+/* .container {
+    max-width: 768px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+} */
+.skills_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
+}
+.skills_icon {
+  margin-right: 0.75rem;
+}
+
+.skills_icon, .skills_arrow {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: hsl(250deg 69% 61%);
+}
+.skills_title {
+  font-size: 1.25rem;
+}
+.skills_subtitle {
+  font-size: 0.875rem;
+  color: var(--text-color-light);
+}
+.skills_open .skills_arrow {
+  transform: rotate(-180deg);
+}
+
+.skills_arrow {
+  margin-left: auto;
+  transition: 0.4s;
+}
+.skills_icon, .skills_arrow {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: hsl(250deg 69% 61%);
+}
+.skills_open .skills_list {
+  height: max-content;
+  margin-bottom: 2.5rem;
+  transition: 0.3s;
+}
+
+.skills_list {
+  height: 0;
+  overflow: hidden;
+}
+.skills_list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+.skills_titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.single_skill_icon {
+  color: hsl(250deg 69% 61%);
+  font-size: 2.25rem;
+}
+.skills_name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.skills_bar {
+  height: 11px;
+  border-radius: 0.25rem;
+  background-color: hsl(250deg 69% 61%);
+}
