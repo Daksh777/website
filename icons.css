@@ -53,3 +53,27 @@
   float: right;
   content: '\0048'
 }
+
+.icon-chevron-down:before {
+  content: '\0049';
+}
+
+.icon-chevron-up:before {
+  content: '\004a';
+}
+
+.icon-code-tags:before {
+  content: '\004b';
+}
+
+.icon-application-brackets-outline:before {
+  content: '\004c';
+}
+
+.icon-hammer-wrench:before {
+  content: '\004d';
+}
+
+.icon-translate:before {
+  content: '\004e';
+}
