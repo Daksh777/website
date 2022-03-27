@@ -1363,19 +1363,20 @@ body{
 }
 .skills_icon {
   margin-right: 0.75rem;
+  font-size: 1.5rem;
 }
 
 .skills_icon, .skills_arrow {
-  font-size: 2rem;
   font-weight: bolder;
-  color: hsl(250deg 69% 61%);
+  color: #8CB3EE;
 }
 .skills_title {
+  color: white;
   font-size: 1.25rem;
 }
 .skills_subtitle {
   font-size: 0.875rem;
-  color: var(--text-color-light);
+  color: white;
 }
 .skills_open .skills_arrow {
   transform: rotate(-180deg);
@@ -1386,9 +1387,8 @@ body{
   transition: 0.4s;
 }
 .skills_icon, .skills_arrow {
-  font-size: 2rem;
   font-weight: bolder;
-  color: hsl(250deg 69% 61%);
+  color: #8CB3EE;
 }
 .skills_open .skills_list {
   height: max-content;
@@ -1410,15 +1410,16 @@ body{
   margin-bottom: 0.5rem;
 }
 .single_skill_icon {
-  color: hsl(250deg 69% 61%);
+  color: #8CB3EE;
   font-size: 2.25rem;
 }
 .skills_name {
   font-size: 1rem;
+  color: white;
   font-weight: 500;
 }
 .skills_bar {
   height: 11px;
   border-radius: 0.25rem;
-  background-color: hsl(250deg 69% 61%);
+  background-color: #8CB3EE;
 }
