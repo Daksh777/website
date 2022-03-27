@@ -1356,6 +1356,7 @@ body{
     margin-right: 1.5rem;
 } */
 .skills_header {
+  padding-left: 2.7rem;
   display: flex;
   align-items: center;
   margin-bottom: 1.5rem;
