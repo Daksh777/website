@@ -59,7 +59,7 @@
   content: '\0049';
 }
 
-.icon-chevron-up:before {
+.icon-microsoft-azure:before {
   content: '\004a';
 }
 
@@ -77,4 +77,64 @@
 
 .icon-translate:before {
   content: '\004e';
+}
+
+.icon-git:before {
+  content: '\004f';
+}
+
+.icon-google-cloud:before {
+  content: '\0050';
+}
+
+.icon-language-css3:before {
+  content: '\0051';
+}
+
+.icon-language-html5:before {
+  content: '\0052';
+}
+
+.icon-language-javascript:before {
+  content: '\0053';
+}
+
+.icon-language-python:before {
+  content: '\0054';
+}
+
+.icon-bootstrap:before {
+  content: '\0055';
+}
+
+.icon-OpenCV:before {
+  content: '\0056';
+}
+
+.icon-numpy:before {
+  content: '\0057';
+}
+
+.icon-tensorflow:before {
+  content: '\0058';
+}
+
+.icon-figma:before {
+  content: '\0059';
+}
+
+.icon-a1:before {
+  content: '\005a';
+}
+
+.icon-c1:before {
+  content: '\0061';
+}
+
+.icon-c2:before {
+  content: '\0062';
+}
+
+.icon-photoshop:before {
+  content: '\0063';
 }
