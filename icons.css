@@ -55,6 +55,7 @@
 }
 
 .icon-chevron-down:before {
+  vertical-align: middle;
   content: '\0049';
 }
 

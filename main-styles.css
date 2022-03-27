@@ -1358,7 +1358,7 @@ body{
 .skills_header {
   display: flex;
   align-items: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   cursor: pointer;
 }
 .skills_icon {
