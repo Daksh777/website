@@ -1422,5 +1422,14 @@ body{
 .skills_bar {
   height: 11px;
   border-radius: 0.25rem;
-  background-color: #8CB3EE;
+  background-color: white;
+}
+
+.bar {
+	position:relative;
+  float:left;
+  border-radius: 0.25rem;
+  min-width:1%;
+  height:100%;
+  background:#8CB3EE;
 }
