@@ -149,9 +149,8 @@ img {
   display: -ms-flex;
   display: -o-flex;
   align-items: center;
-  min-height: 100vh;
-  padding-top: 3rem;
-  padding-bottom: 3rem
+  min-height: 85vh;
+  padding-top: 6rem
 }
 
 @keyframes arrowdown {
