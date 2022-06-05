@@ -91,3 +91,13 @@ jQuery(function (a) {
         a(b.relatedTarget).closest(c.BASE).find(c.TOGGLER).trigger("click")
     })
 });
+
+if (localStorage.hasOwnProperty("first-time-user") === false) {
+    document.getElementById("burger").classList.add("navbar-animation")
+}
+function clickedBurger() {
+    if (localStorage.hasOwnProperty("first-time-user") === false) {
+        localStorage.setItem("first-time-user", false)
+    }
+    document.getElementById("burger").style.animation = "none"
+}
