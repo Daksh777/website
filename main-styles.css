@@ -1522,3 +1522,14 @@ body {
   }
   
 }
+
+.typewriter span {
+  padding: 10px;
+  border-right: solid #8cb3ee 5px; 
+  animation: cursor 1s ease-in-out infinite;
+}
+
+@keyframes cursor {
+  from { border-color: #8cb3ee; }
+  to { border-color: transparent; }
+}

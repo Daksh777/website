@@ -13,7 +13,8 @@
     <meta name="title" content="Home - Daksh P. Jain">
 
     <meta property="og:title" content="Home - Daksh P. Jain">
-    <meta property="og:description" content="Personal website of Daksh P. Jain - a programmer and photographer from New Delhi, India.">
+    <meta property="og:description"
+        content="Personal website of Daksh P. Jain - a programmer and photographer from New Delhi, India.">
     <meta property="og:image" content="assets/banner.png">
     <meta property="og:url" content="https://daksh.eu.org">
     <meta name="twitter:card" content="summary_large_image">
@@ -47,9 +48,9 @@
                     </span>
 
                 </div>
-                <button id="burger" onclick="clickedBurger()" class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button id="burger" onclick="clickedBurger()" class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <div class="hamburger">
                         <span></span>
                         <span></span>
@@ -91,39 +92,43 @@
                         <h1 class="section-title white-text font-3 display-1"><strong>Hi, I'm Daksh P.
                                 Jain</strong></h1>
 
-                        <p class="normal-text white-text display-2">
-                            Python & Web Developer<br><br></p>
+                        <p class="typewriter normal-text white-text display-2">
+                            <span
+                                data-text="Python & Web Developer | Co-Organizer @ CodeDay NCR | Linux Foundation Training Scholar | Volunteer @ GDG ND & PyDelhi | Student"></span>
+                            <br><br></p>
                         <div class="social-row">
-                                <div class="socials">
-                                    <a href="https://github.com/Daksh777" target="_blank">
-                                        <span class="icon-github iconfont"></span>
-                                    </a>
-                                </div>
-                                <div class="socials">
-                                    <a href="mailto:contact@daksh.eu.org" target="_blank">
-                                        <span class="iconfont icon-email"></span>
-                                    </a>
-                                </div>
-                                <div class="socials">
-                                    <a href="https://t.me/Daksh777" target="_blank">
-                                        <span class="iconfont icon-telegram"></span>
-                                    </a>
-                                </div>
-                                <div class="socials">
-                                    <a href="https://www.linkedin.com/in/daksh777" target="_blank">
-                                        <span class="iconfont icon-linkedin"></span>
-                                    </a>
-                                </div>
-                                
-
+                            <div class="socials">
+                                <a href="https://github.com/Daksh777" target="_blank">
+                                    <span class="icon-github iconfont"></span>
+                                </a>
                             </div>
+                            <div class="socials">
+                                <a href="mailto:contact@daksh.eu.org" target="_blank">
+                                    <span class="iconfont icon-email"></span>
+                                </a>
+                            </div>
+                            <div class="socials">
+                                <a href="https://t.me/Daksh777" target="_blank">
+                                    <span class="iconfont icon-telegram"></span>
+                                </a>
+                            </div>
+                            <div class="socials">
+                                <a href="https://www.linkedin.com/in/daksh777" target="_blank">
+                                    <span class="iconfont icon-linkedin"></span>
+                                </a>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
     </div>
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ad4eae2406134f569cbb24f4b1506c17"}'></script><!-- End Cloudflare Web Analytics -->
+    </section>
+    </div>
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
+        data-cf-beacon='{"token": "ad4eae2406134f569cbb24f4b1506c17"}'></script><!-- End Cloudflare Web Analytics -->
     <script src="jquery.min.js"></script>
     <script src="bootstrap.min.js"></script>
     <script src="nav-dropdown.js"></script>
@@ -140,6 +145,53 @@
             </div>
         </div>
     </section>
+    <script>
+        var span = document.querySelector(".typewriter span");
+        var textArr = span.getAttribute("data-text").split(" | ");
+        var maxTextIndex = textArr.length;
+
+        var sPerChar = 0.10;
+        var sBetweenWord = 1;
+        var textIndex = 0;
+
+        typing(textIndex, textArr[textIndex]);
+
+        function typing(textIndex, text) {
+            var charIndex = 0;
+            var maxCharIndex = text.length - 1;
+
+            var typeInterval = setInterval(function () {
+                span.innerHTML += text[charIndex];
+                if (charIndex == maxCharIndex) {
+                    clearInterval(typeInterval);
+                    setTimeout(function () {
+                        deleting(textIndex, text)
+                    }, sBetweenWord * 1000);
+
+                } else {
+                    charIndex += 1;
+                }
+            }, sPerChar * 1000);
+        }
+
+        function deleting(textIndex, text) {
+            var minCharIndex = 0;
+            var charIndex = text.length - 1;
+
+            var typeInterval = setInterval(function () {
+                span.innerHTML = text.substr(0, charIndex);
+                if (charIndex == minCharIndex) {
+                    clearInterval(typeInterval);
+                    textIndex + 1 == maxTextIndex ? textIndex = 0 : textIndex += 1;
+                    setTimeout(function () {
+                        typing(textIndex, textArr[textIndex])
+                    }, sBetweenWord * 1000);
+                } else {
+                    charIndex -= 1;
+                }
+            }, sPerChar * 1000);
+        }
+    </script>
 </body>
 
 
