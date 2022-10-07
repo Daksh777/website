@@ -1535,30 +1535,30 @@ body {
 }
 
 /* Education */
-.education_container {
+.experience_container {
   row-gap: 2rem;
 }
-.education_content {
+.experience_content {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
 }
-.education_year, .education_race {
+.experience_time, .experience_org {
   color: white;
   font-size: 1.25rem;
 }
-.education_university, .education_speciality {
+.experience_type, .experience_position {
   color: white;
   display: block;
   font-size: 0.813rem;
 }
-.education_year, .education_university {
+.experience_time, .experience_type {
   text-align: right;
 }
-.education_time {
+.experience_time_block {
   padding: 0 1rem;
   justify-self: center;
 }
-.education_rounder {
+.experience_rounder {
   position: relative;
   display: inline-block;
   width: 12px;
@@ -1566,7 +1566,7 @@ body {
   background-color: #6e9fe9;
   border-radius: 50%;
 }
-.education_rounder::before {
+.experience_rounder::before {
   content: "";
   position: absolute;
   transform: translate(-4px, -4px);
@@ -1575,7 +1575,7 @@ body {
   border: 1px solid #6e9fe9;
   border-radius: 50%;
 }
-.education_line {
+.experience_line {
   display: block;
   height: 90%;
   width: 2px;
@@ -1594,7 +1594,7 @@ body {
 }
 
 @media screen and (min-width: 620px) {
-  .education_time {
+  .experience_time_block {
       padding: 0 2rem;
   }
 }
