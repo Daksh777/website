@@ -136,3 +136,11 @@
 .icon-instagram:before {
   content: '\0064';
 }
+
+.icon-hammer-wrench:before {
+  content: '\0065';
+}
+
+.icon-briefcase:before {
+  content: '\0066';
+}
