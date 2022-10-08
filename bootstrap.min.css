@@ -527,8 +527,11 @@ a>code {
 }
 
 .nav-link {
-    display: block;
-    padding: .5rem 1rem
+    line-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 32px 0 0;
+    padding: 0 16px;
 }
 
 .nav-link:focus,

@@ -139,8 +139,12 @@
 
 .icon-hammer-wrench:before {
   content: '\0065';
+  padding-right: 5px;
+  vertical-align: middle;
 }
 
 .icon-briefcase:before {
   content: '\0066';
+  padding-right: 7px;
+  vertical-align: middle;
 }
