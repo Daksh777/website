@@ -1372,18 +1372,20 @@ body {
   row-gap: 0;
 }
 
+.skill.skills_content.skills_open {
+  background: #2e2f33;
+  padding: 16px;
+  border-radius: 24px;
+}
+
 .grid {
   display: grid;
   gap: 1.5rem;
 }
 
-/* .container {
-    max-width: 768px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-} */
 .skills_header {
-  padding-left: 2.7rem;
+  padding-left: 1rem;
+  margin-top: 1.2rem;
   display: flex;
   align-items: center;
   margin-bottom: 1.5rem;
