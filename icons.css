@@ -17,15 +17,15 @@
 }
 
 .icon-email:before {
-  content: '\0041'
+  content: '\0041';
 }
 
 .icon-telegram:before {
-  content: '\0042'
+  content: '\0042';
 }
 
 .icon-github:before {
-  content: '\0043'
+  content: '\0043';
 }
 
 .icon-linkedin:before {
@@ -33,25 +33,19 @@
 }
 
 .icon-close:before {
-  content: '\0045'
+  content: '\0045';
 }
 
-.icon-arrow-left:before {
-  position: relative;
-  float: right;
-  content: '\0046'
+.icon-chevron-left:before {
+  content: '\0046';
 }
 
-.icon-arrow-right:before {
-  position: relative;
-  float: right;
-  content: '\0047'
+.icon-chevron-right:before {
+  content: '\0047';
 }
 
 .icon-fullscreen:before {
-  position: relative;
-  float: right;
-  content: '\0048'
+  content: '\0048';
 }
 
 .icon-chevron-down:before {
@@ -59,7 +53,7 @@
   content: '\0049';
 }
 
-.icon-microsoft-azure:before {
+.icon-twitter:before {
   content: '\004a';
 }
 
@@ -123,7 +117,7 @@
   content: '\0059';
 }
 
-.icon-a1:before {
+.icon-a2:before {
   content: '\005a';
 }
 
@@ -137,4 +131,20 @@
 
 .icon-photoshop:before {
   content: '\0063';
+}
+
+.icon-instagram:before {
+  content: '\0064';
+}
+
+.icon-hammer-wrench:before {
+  content: '\0065';
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.icon-briefcase:before {
+  content: '\0066';
+  padding-right: 7px;
+  vertical-align: middle;
 }
